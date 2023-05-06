@@ -1,0 +1,129 @@
+body   {background-color: #90C7E3; color: #666666;
+        font-family: Verdana, Arial, sans-serif; margin: 0}
+
+header   {background-color: #000033; color: #FFFFFF;
+          font-family: Georgia, sans-serif; padding: 1em; text-align: center;}
+
+h1   {line-height: 200%; color: #FFFFFF; margin-bottom: 0;
+      font-size: 1.5em;}
+
+#nav  { font-size: 1.2em; text-align: center; background-color: #FFFFFF;}
+
+#nav ul { list-style-type: none; padding-left: 0; margin: 0;
+          flex-direction: column }
+
+#nav li { padding-top: 0.5em; padding-bottom: 0.5em; padding-left: 0em;
+          padding-right: 0em; width: 100%; border-bottom: 1px solid;}
+#nav a { text-decoration: none; }
+#nav a:link { color: #5C7FA3; }
+#nav a:visited { color: #344873; }
+#nav a:hover { color: #A52A2A; }
+
+h2   {color:#3399CC; font-family: Georgia, sans-serif;}
+
+dt   {color:#000033; font-weight: bold;}
+
+.resort{color:#000033; font-size: 1.2em;}
+
+footer  {font-size: .70em; font-style: italic; padding: 1em;
+         text-align: center; background-color: #FFFFFF;}
+
+h3   {color:#000033; font-family: Georgia, sans-serif;}
+
+main   {padding-top: 0; padding-bottom: 0; padding-left: 1em;
+        padding-right: 1em; background-color: #FFFFFF;}
+
+*[class="content-box"] { box-sizing: border-box; padding-left: 0.5em;
+    padding-right: 0.5em}
+
+#wrapper { background-color: #FFFFFF;}
+
+form { display: flex; flex-direction: column; padding-left: 1em; width: 80%;}
+
+input, textarea { display: block; margin-bottom: 0.5em; }
+
+video {float: right; margin: 2em;}
+
+.shop {margin: 1em; background-color: #F4F4F4;
+  justify-content: space-between;}
+
+.shop img {float: right; padding: 1em;}
+
+.shop form {clear: right;}
+
+
+
+#shophero{height: 300px; background: url("psunset.jpg");
+           background-size: 200% 100%; background-position: no-repeat;}
+
+
+#homehero{height: 300px; background: url("coast.jpg");
+          background-size: 200% 100%; background-position: no-repeat;}
+
+#yurthero{height: 300px; background: url("yurt.jpg");
+          background-size: 200% 100%; background-position: no-repeat;}
+
+#trailhero{height: 300px; background: url("trail.jpg");
+           background-size: 200% 100%; background-position: no-repeat;}
+
+#reshero{height: 300px; background: url("ocean.jpg");
+          background-size: 200% 100%; background-position: no-repeat;}
+
+#mobile { display: inline;}
+
+#desktop { display: none;}
+
+@media screen and (min-width: 600px) {
+  h1 {font-size: 2em; letter-spacing: 0.25em}
+
+  #nav ul {list-style-type: none; padding-left: 0; margin: 0;
+            flex-direction: column; display: flex; flex-direction: row;
+            flex-wrap: nowrap; justify-content: space; padding-right: 2em}
+
+  #nav li {width: 12em; border-bottom: none;}
+
+  *[class="content-box"] {box-sizing: border-box; padding-left: 2em;
+      padding-right: 2em}
+
+  #flow {display: flex; justify-content: space-between;}
+
+  #mobile { display: none;}
+
+  #desktop { display: inline;}
+
+  #shophero{height: 300px; background: url("psunset.jpg");
+             background-size: 100% 100%; background-position: no-repeat;}
+
+  #homehero{height: 300px; background: url("coast.jpg");
+            background-size: 100% 100%; background-position: no-repeat;}
+
+  #yurthero{height: 300px; background: url("yurt.jpg");
+            background-size: 100% 100%; background-position: no-repeat;}
+
+  #trailhero{height: 300px; background: url("trail.jpg");
+             background-size: 100% 100%; background-position: no-repeat;}
+
+  form { display: grid; grid-template-columns: 10em 1fr; grid-gap: 1em;
+             width: 60%; }
+
+  input[type="submit"] { grid-column: 2; width: 9em;}
+
+  #reshero{height: 300px; background: url("ocean.jpg");
+           background-size: 100% 100%; background-position: no-repeat;}
+}
+
+@media screen and (min-width: 1024px) {
+  body {linear-gradient(to bottom, #FFFFFF 20%, #90C7E3 60%, #FFFFFF 100%);}
+  #nav ul {padding-left: 10%; padding-right: 10%}
+  #wrapper { margin: auto; width: 80%}
+}
+
+table {border-collapse: collapse; border: 1px solid #3399CC; width: 90%;}
+
+td, th {padding: 5px; border: 1px solid #3399CC;}
+
+td {text-align: center;}
+
+.text {text-align: left;}
+
+tr:nth-of-type(even) { background-color: #DFEDF8;}
